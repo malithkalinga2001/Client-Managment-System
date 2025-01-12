@@ -1,0 +1,227 @@
+/* Specific styling for the Login page */
+.login h2 {
+    text-align: center;
+    color: #008CBA;
+    font-size: 50px;
+    font-weight: bold;
+}
+body{
+    font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background: linear-gradient(to bottom, #008CBA 50%, #f0f0f0 50%);
+   
+}
+
+/* Rest of the Login page styling */
+.login, .forgot-password  {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+.login {
+    margin-top: 10%;
+  }
+.forgot-password {
+    margin-top: 7%;
+  }
+.forgot-password h2{
+    text-align: center;
+  color: #008CBA;
+  font-size: 50px;
+  font-weight: bold;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+.center-links a {
+    margin-top: 10px;
+  display: block;
+  color: #008CBA;
+  text-decoration: none;
+}
+
+ .MainDashboard {
+    margin: 10px;
+    text-decoration: none;
+    color: #008CBA;
+}
+a:hover {
+    text-decoration: underline;
+  }
+  .center-links {
+    display: flex;
+    justify-content: center;
+  }
+
+.center-texts {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+.admin-forgot-password, .client-back-to-home, .admin-create-account {
+    margin: 10px;
+    text-decoration: none;
+    color: #008CBA;
+  }
+  button a{
+    text-decoration: none; /* Remove underline */
+    color: inherit;
+  }
+
+
+@media (max-width: 1024px) {
+  .ap-header-section h1 {
+    font-size: 28px;
+  }
+
+  
+  
+}
+
+@media (max-width: 768px) {
+
+  .login-page, .forgot-password-page{
+    height: 100vh;
+    background: linear-gradient(to bottom, #008CBA 50%, #f0f0f0 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Rest of the Login page styling */
+.login, .forgot-password {
+    max-width: 40%;
+	max-height: 100%;
+    padding: 10%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+	
+}
+.login{
+	margin-top:0;
+	margin-bottom:10px;
+	padding-top:0;
+	min-height: 300px;
+}
+
+
+.center-links{
+	size: 10px;
+	margin-top:100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #F02291;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.forgot-password, .MainDashboard {
+    margin: 1%;
+    text-decoration: none;
+    color: #008CBA;
+}
+.login-page h2 {
+    text-align: center;
+    color: #008CBA;
+    font-size: 30px;
+    font-weight: bold;
+	
+}
+}
+
+@media (max-width: 576px) {
+
+	
+.login-page, .forgot-password-page{
+    height: 100vh;
+    background: linear-gradient(to bottom, #008CBA 50%, #f0f0f0 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Rest of the Login page styling */
+.login, .forgot-password {
+    max-width: 40%;
+	max-height: 100%;
+    padding: 10%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+	
+}
+.login{
+	margin-top:0;
+	margin-bottom:10px;
+	padding-top:0;
+	min-height: 300px;
+}
+
+
+.login, .forgot-password input {
+    padding: 4%;
+    font-size: 13px;
+	margin-top:8%;
+}
+.center-links{
+	size: 10px;
+	margin-top:100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #F02291;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.forgot-password, .MainDashboard {
+    margin: 1%;
+    text-decoration: none;
+    color: #008CBA;
+}
+.login-page h2 {
+    text-align: center;
+    color: #008CBA;
+    font-size: 30px;
+    font-weight: bold;
+	
+}
+  
+}

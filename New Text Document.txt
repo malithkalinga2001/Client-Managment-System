@@ -1,0 +1,1 @@
+Hello there, this is the client and payment management project. So make sure to add all of your project files to this location.

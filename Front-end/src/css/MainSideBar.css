@@ -1,0 +1,313 @@
+/* Sidebar.css */
+.mainsidebar {
+  
+    background-image: url('../assets/slide1.jpg'); /* Update with your image path */
+    background-size: cover; /* Ensure the image covers the entire sidebar */
+    background-position: center; /* Center the image */
+    
+     /* Space between buttons */
+	width: 17%;
+	height: 100vh; /* Make it full viewport height */
+	background-color: #1A2D70;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2.6%;
+	transition: width 0.3s ease;
+  }
+  .maincontent h1{
+	  font-size: 50px;
+  }
+  
+  .home-button {
+    background-color: #1A2D70; /* Button background color */
+    border: none;
+    padding: 10px px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    font-size: 20px;
+    
+	width:80%;
+	height:13%;
+	color: black;
+	padding-left:3px;
+  color: white;
+  }
+   
+   
+  .admin-button {
+    background-color: #1A2D70; /* Button background color */
+    border: none;
+    padding: 10px px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    font-size: 20px;
+	width:80%;
+	height:13%;
+	padding-left:3px;
+  }
+    
+  .client-button {
+    background-color:#1A2D70; /* Button background color */
+    border: none;
+    padding: 10px px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    font-size: 20px;
+	width:80%;
+	height:13%;
+	padding-left:3px;
+  }
+.home-button a{
+  text-decoration: none !important; /* Remove underline */
+  color: inherit; 
+}
+.admin-button a,
+.client-button a {
+  text-decoration: none !important; /* Remove underline */
+  color: inherit; /* Ensure the text color inherits from the button */
+}
+.home-button:hover,
+.admin-button:hover,
+.client-button:hover {
+  background-color:  #4862d2; /* Darker shade for hover effect */
+}
+  .mainsidebar-button:hover {
+    background-color: #2d0414; /* Change on hover */
+  }
+  
+  
+  .main-logo-section {
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+    width: auto;
+  height: 20%;
+  margin-bottom: 60%;
+  }
+  
+  .logo-main {
+  width: 100%;
+  height: auto;
+  
+  }
+  
+  .profile-section {
+    background-color: #D9D9D9;
+  width: 90%;
+  height: 25%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  }
+  
+  .profile-image {
+    width: 224px;
+    height: 224px;
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensure the image covers the entire area */
+    background-color: transparent; /* Ensure no background color is applied */
+  }
+  
+  .icon-section {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .mainsidebar {
+    width: 200px;
+  }
+
+  .main-logo-section {
+    width: 50%;
+    height: 60px;
+  }
+
+  .logo-main {
+    width: 90%;
+    height: 25%px;
+  }
+
+  .icon {
+    font-size: 2rem; /* Smaller icons */
+  }
+
+  .sidebar-list li {
+    font-size: 1rem; /* Smaller font for smaller screens */
+    height: 50px;
+    line-height: 40px;
+  }
+  
+  .home-button{
+	font-size: 15px;
+	padding-left:3px;
+  }
+  .admin-button{
+	font-size: 15px;
+	padding-left:3px;
+	
+  }
+  .client-button{
+	font-size: 15px;
+	padding-left:3px;
+  }
+  .maincontent h1{
+	  font-size: 40px;
+  }
+  
+  .main-logo-section {
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+    width: auto;
+  height: 20%;
+  margin-bottom: 60%;
+  }
+  
+  .logo-main {
+  width: 100%;
+  height: auto;
+  
+  }
+}
+
+@media (max-width: 768px) {
+  .mainsidebar {
+    width: 200px;
+  }
+
+  .main-logo-section {
+    width: 50%;
+    height: 60px;
+  }
+
+  .logo-main {
+    width: 90%;
+    height: 25%px;
+  }
+
+  .icon {
+    font-size: 2rem; /* Smaller icons */
+  }
+
+  .sidebar-list li {
+    font-size: 1rem; /* Smaller font for smaller screens */
+    height: 50px;
+    line-height: 40px;
+  }
+  
+  .home-button{
+	font-size: 10px;
+	padding-left:3px;
+  }
+  .admin-button{
+	font-size: 10px;
+	padding-left:3px;
+	
+  }
+  .client-button{
+	font-size: 10px;
+	padding-left:3px;
+  }
+  .maincontent h1{
+	  font-size: 35px;
+  }
+  .main-logo-section {
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+    width: auto;
+  height: 20%;
+  margin-bottom: 60%;
+  }
+  
+  .logo-main {
+  width: 100%;
+  height: auto;
+  
+  }
+}
+
+@media (max-width: 576px) {
+  .mainsidebar {
+    width: 150px; /* Narrower sidebar */
+	flex-direction: column;
+	height:100vh;
+  }
+
+  .main-logo-sectionn {
+    width: 50%;
+    height: 100%;
+  }
+
+  .logo-main {
+    width: 85%;
+    height: 25%;
+  }
+
+  .icon {
+    font-size: 1.5rem; /* Smaller icons */
+  }
+
+  .sidebar-list li {
+    font-size: 0.875rem; /* Even smaller font for very small screens */
+    height: 40px;
+    line-height: 30px;
+  }
+  .home-button{
+	font-size: 12px;
+	padding-left:3px;
+	padding:1%;
+  }
+  .admin-button{
+	font-size: 12px;
+	padding-left:3px;
+	padding:1%;
+  }
+  .client-button{
+	font-size: 12px;
+	padding-left:3px;
+	padding:1%;
+  }
+  .maincontent h1{
+	  font-size: 25px;
+  }
+  .main-logo-section {
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+    width: auto;
+  height: 20%;
+  margin-bottom: 60%;
+  }
+  
+  .logo-main {
+  width: 100%;
+  height: auto;
+  
+  }
+}
+  
+
+
+  

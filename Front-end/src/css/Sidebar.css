@@ -1,0 +1,137 @@
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 17%;
+  height: 100vh; /* Make it full viewport height */
+  background-color: #1A2D70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.6%;
+  /*transition: width 0.3s ease; /* Smooth width transition */
+}
+
+.logo-section {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  height: auto;
+}
+
+.jd-profile-section {
+  background-color: #D9D9D9;
+  width:119.5%;
+  height: 30%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:20px;
+  margin-top:20px;
+}
+
+.jd-icon-section {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #1A2D70;
+  
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  width: 100%;
+  text-align: left;
+  
+}
+
+.sidebar-list li a {
+  width: 100%;
+  height: 45px;
+  font-family: 'Inter', sans-serif;
+
+  color: white;
+  padding-left: 20px;
+  line-height: 45px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+
+.sidebar-list li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .logo-section {
+    width: 50%;
+    height: 60px;
+  }
+
+  .jd-profile-section {
+    width: 90%;
+    height: 25%px;
+  }
+
+  .icon {
+    font-size: 2rem; /* Smaller icons */
+  }
+
+  .sidebar-list li {
+    font-size: 1rem; /* Smaller font for smaller screens */
+    height: 50px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 30%; /* Narrower sidebar */
+	flex-direction: column;
+	height:100vh;
+  }
+
+  .logo-section {
+    width: 50%;
+    height: 100%;
+  }
+
+  .jd-profile-section {
+    width: 85%;
+    height: 25%;
+  }
+
+  .icon {
+    font-size: 1.5rem; /* Smaller icons */
+  }
+
+  .sidebar-list li {
+    font-size: 0.875rem; /* Even smaller font for very small screens */
+    height: 40px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background: linear-gradient(to bottom, #008CBA 50%, #f0f0f0 50%);
+
+}
+
+.client-login, .client-sign-up, .client-change-password {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.client-login {
+  margin-top: 10%;
+}
+
+.client-change-password {
+  margin-top: 7%;
+}
+
+.client-login h2 {
+  text-align: center;
+  color: #008CBA;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.client-sign-up h2 {
+  text-align: center;
+  color: #008CBA;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.client-change-password h2 {
+  text-align: center;
+  color: #008CBA;
+  font-size: 50px;
+  font-weight: bold;
+}
+.client-logo-section1 {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.client-logo1 {
+  width: 20%;
+  height: 20%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f73;
+}
+
+.client-center-links a {
+  margin-top: 10px;
+  display: block;
+  color: #008CBA;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.client-dashboard {
+  display: flex;
+}
+
+nav {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  height: auto;
+}
+
+nav h2 {
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.client-center-links {
+  display: flex;
+  justify-content: center;
+}
+
+.client-forgot-password, .client-back-to-home, .client-create-account {
+  margin: 10px;
+  text-decoration: none;
+  color: #008CBA;
+}
+
+.client-center-texts {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+/* Allow scrolling for the body and html */
+html, body {
+  overflow: auto; /* or scroll */
+  height: 100%; /* Ensure full height is set */
+}

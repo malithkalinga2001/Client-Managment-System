@@ -1,0 +1,424 @@
+/* Page Container */
+.page-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+
+@media (min-width: 768px) {
+  .page-container {
+    flex-direction: row;
+  }
+}
+
+.content {
+  
+  width: 70%;          
+  background-color: #fff;
+  height: 100%; 
+    
+}
+
+.content label{
+	font-size: 14px;
+}
+
+.ap-header-section {
+  width: 100%;
+  height: 40px;
+  background-color: #9DDEFA;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  
+  
+}
+
+.ap-header-section h1 {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  padding-right:5%;
+  margin: 0;
+
+}
+
+/* Main Section */
+.main-section {
+  margin-top: 10px;
+  
+}
+
+.profile-breadcrumb {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: black;
+  margin-left: 30px;
+}
+
+.profile-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 3%;
+  margin-left: 30px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  /*overflow-y: scroll;*/
+  margin-left: 30px;
+}
+
+.label1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.profile-input-box {
+  width: 97%;
+  max-width: 1335px;
+  height: 25px;
+  background-color: #D9D9D9;
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 5px;
+}
+
+/* Save Button */
+.save-button {
+  width: 50%;
+  height: 70%;
+  background-color: #239DF5;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.button-set {
+  display: flex; /* Use flexbox to align buttons in one line */
+  gap: 10px; /* Adds space between buttons */
+  justify-content: flex-start; /* Aligns buttons to the start of the container */
+  padding: 10px 0; /* Optional: Adds padding around the button container */
+}
+
+/* Footer Section */
+.ap-footer-section {
+  width: 100%;
+  height: auto;
+  background-color: #9DDEFA;
+  margin-top: 2.66%;
+}
+
+
+
+
+.clients-table{
+  width: 90%;
+  border-collapse:collapse;
+  margin-bottom: 10px; /* Space between table and delete button */
+ 
+}
+.clients-table th, .clients-table td {
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #131313;
+  padding: 0px;
+  text-align: left;
+}
+.clients-table th {
+  background-color:white;
+  color:black;
+}
+.clients-table td {
+  font-size: 14px;
+}
+.input-field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing:border-box;
+}
+
+
+
+@media (max-width: 1024px) {
+  .ap-header-section h1 {
+    font-size: 28px;
+  }
+
+  .profile-title {
+    font-size: 26px;
+  }
+
+  .profile-input-box {
+    max-width: 100%;
+    height: 22px;
+  }
+
+  .save-button {
+    max-width: 150px;
+    height: 60px;
+    font-size: 20px;
+  }
+  
+  /*table*/
+  
+  .clients-table {
+  width: 90%;
+  border-collapse:collapse;
+  margin-bottom: 10px; /* Space between table and delete button */
+  margin-left: 10px;
+}
+.clients-table th, .clients-table td {
+  border: 1px solid #131313;
+  padding: 0px;
+  text-align: left;
+}
+.clients-table th {
+  background-color:white;
+  color:black;
+  font-family: 'Inter', sans-serif;
+}
+.clients-table td {
+  font-size: 14px;
+}
+.input-field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing:border-box;
+}
+.small-input {
+  width: 80px; /* Small size column for Task Id */
+}
+.large-input {
+  width: 200px; /* Large size columns for Tasks and Description */
+}
+  
+.save-button {
+    max-width: 90px;
+    height: 40px;
+    font-size: 13px; 
+	padding:1%;
+	}
+
+th{
+	font-size:14px;
+}
+.input-field{
+	max-width: 90px;
+    height: 40px;
+    font-size: 12px;
+padding:1%;	
+}
+.input-field large-input{
+	max-width: 90px;
+    height: 40px;
+    font-size: 13px; 
+	padding:1%;
+}
+  
+}
+
+@media (max-width: 768px) {
+.page-container {
+  display: flex;
+  flex-direction: row;
+}
+.content{
+	width:50%;
+}
+.content label{
+	font-size: 12px;
+}
+  .ap-header-section h1 {
+    font-size: 17px;
+  }
+
+  .profile-title {
+    font-size: 15px;
+  }
+  
+
+  .profile-input-box {
+    max-width: 90%;
+    height: 18px;
+  }
+
+form{
+ height:5px;
+}
+  form .save-button {
+    max-width: 60px;
+    height: 30px;
+	font-size: 12px;
+  }
+  
+  /*table*/
+  
+  .clients-table {
+  width: 90%;
+  border-collapse:collapse;
+  margin-bottom: 10px; /* Space between table and delete button */
+  margin-left: 10px;
+}
+.clients-table th, .clients-table td {
+  border: 1px solid #131313;
+  padding: 0px;
+  text-align: left;
+}
+.clients-table th {
+  background-color:white;
+  color:black;
+  font-family: 'Inter', sans-serif;
+}
+.clients-table td {
+  font-size: 14px;
+}
+.input-field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing:border-box;
+}
+.small-input {
+  width: 80px; /* Small size column for Task Id */
+}
+.large-input {
+  width: 200px; /* Large size columns for Tasks and Description */
+}
+  
+.save-button {
+    max-width: 90px;
+    height: 40px;
+    font-size: 13px; 
+	padding:1%;
+	}
+
+th{
+	font-size:14px;
+}
+.input-field{
+	max-width: 90px;
+    height: 40px;
+    font-size: 12px;
+padding:1%;	
+}
+.input-field large-input{
+	max-width: 90px;
+    height: 40px;
+    font-size: 13px; 
+	padding:1%;
+}
+  
+  
+}
+
+@media (max-width: 576px) {
+	
+.page-container {
+  display: flex;
+  flex-direction: row;
+}
+.content{
+	width:50%;
+}
+.content label{
+	font-size: 12px;
+}
+  .ap-header-section h1 {
+    font-size: 17px;
+  }
+
+  .profile-title {
+    font-size: 15px;
+  }
+  
+
+  .profile-input-box {
+    max-width: 90%;
+    height: 18px;
+  }
+
+form{
+ height:5px;
+}
+  form .save-button {
+    max-width: 60px;
+    height: 30px;
+	font-size: 12px;
+  }
+  
+  
+    /*table*/
+  
+  .clients-table {
+  width: 90%;
+  border-collapse:collapse;
+  margin-bottom: 10px; /* Space between table and delete button */
+  margin-left: 10px;
+}
+.clients-table th, .clients-table td {
+  border: 1px solid #131313;
+  padding: 0px;
+  text-align: left;
+}
+.clients-table th {
+  background-color:white;
+  color:black;
+  font-family: 'Inter', sans-serif;
+}
+.clients-table td {
+  font-size: 12px;
+}
+.input-field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing:border-box;
+}
+.small-input {
+  width: 80px; /* Small size column for Task Id */
+}
+.large-input {
+  width: 200px; /* Large size columns for Tasks and Description */
+}
+  
+.save-button {
+    max-width: 60px;
+    height: 30px;
+    font-size: 12px; 
+	padding:1%;
+	}
+
+th{
+	font-size:12px;
+}
+.input-field{
+	max-width: 60px;
+    height: 30px;
+    font-size: 12px;
+padding:1%;	
+}
+.input-field large-input{
+	max-width: 60px;
+    height: 30px;
+    font-size: 12px; 
+	padding:1%;
+}
+  
+}

@@ -1,0 +1,194 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.pay-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container fills the viewport height */
+  background-color: white; /* Full white background */
+}
+
+.pay-header-section {
+    width: 100%;
+    height: 40px;
+    background-color: #9DDEFA;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    
+    
+  }
+  .pay-header-section h1 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    padding-right:5%;
+    margin: 0;
+  
+  }
+  /* Main Section */
+.pay-main-section {
+  padding-left: 20%;
+  padding-top: 60px; /* Add some padding to prevent overlap with the fixed header */
+  display: block;
+    
+  }
+  
+  .pay-profile-breadcrumb {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: black;
+    margin-left: 30px;
+  }
+  
+  .pay-profile-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 3%;
+    margin-left: 30px;
+  }
+  
+  .payment-table-container {
+    display: flex;
+    flex-direction: column;
+    /*overflow-y: scroll;*/
+    gap: 20px;
+  }
+
+
+
+  .payment-table {
+    width: 90%;
+    border-collapse:collapse;
+    margin-bottom: 10px; /* Space between table and delete button */ 
+    table-layout: fixed;
+    background-color: white;
+  }
+  .payment-table th, .payment-table td {
+    border: 1px solid #131313;
+    padding: 5px;
+    text-align: left;
+    white-space: nowrap;
+    white-space: nowrap; /* Prevents wrapping, so rows adjust horizontally */
+    vertical-align: middle; /* Aligns text to the center vertically */
+   
+  }
+  .payment-table th {
+    background-color:white;
+    color:black;
+    font-family: 'Inter', sans-serif;
+  }
+  .payment-table td {
+    font-size: 14px;
+  }
+  .input-field {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing:border-box;
+  }
+  .small-input {
+    width: 80px; /* Small size column for Task Id */
+  }
+  .large-input {
+    width: 200px; /* Large size columns for Tasks and Description */
+  }
+ 
+
+
+  #delete-button {
+    background-color: #239DF5;
+    color: white;
+    cursor: pointer;
+    width: 60px; /* Changed 'column-width' to 'width' for proper button width control */
+    border: 2px solid #239DF5; /* Added for consistent styling */
+    padding: 10px 10px; /* Optional padding */
+    font-size: 10px; /* Optional font size */
+    margin-left: 15px;
+    
+    /*
+    margin-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;*/
+}
+
+#view-button {
+    background-color: #239DF5;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #239DF5;
+    width: 60px;
+    padding: 10px 20px; /* Optional padding */
+    font-size: 10px; /* Optional font size */
+    margin-left: 10px;
+    /*
+    margin-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;*/
+}
+#delete-button:hover {
+  background-color: white;
+  color: #239DF5;
+}
+
+#view-button:hover {
+  background-color: white;
+  color: #239DF5;
+}
+
+
+
+
+  
+  
+ 
+  
+  .payment-table-container {
+    max-height: 500px; /* Adjust as needed */
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
+
+  /* Example of setting specific column widths */
+.payment-table th:nth-child(1), .payment-table td:nth-child(1) {
+  width: 50px; /* 'No' column */
+}
+
+.payment-table th:nth-child(2), .payment-table td:nth-child(2) {
+  width: 100px; /* 'Account ID' column */
+}
+
+.payment-table th:nth-child(3), .payment-table td:nth-child(3) {
+  width: 100px; /* 'Company' column */
+}
+
+.payment-table th:nth-child(7), .payment-table td:nth-child(7) {
+  width: 100px; /* 'Mobile' column */
+}
+
+/* Fix the table header */
+.payment-table thead {
+  position: sticky;
+  top: 0; /* Sticks the header to the top */
+  z-index: 100; /* Ensures the header stays on top of the body content */
+  background-color: white; /* Background color for the sticky header */
+}
+  /* De  fault row style */
+
+
+/* Highlight clicked row */
+.payment-table tr:hover {
+  background-color: #aecde1; /* Light green color for the clicked row */
+}

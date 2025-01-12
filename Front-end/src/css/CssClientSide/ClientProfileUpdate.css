@@ -1,0 +1,91 @@
+.profile-container {
+    display: flex;
+    height: 120vh; /* Adjusted to fit the screen height */
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px; /* Reduced padding for a more compact layout */
+    background-color: #f4f4f4;
+    padding-left: 20%;
+    display: block;
+}
+
+h2 {
+    color: #131314;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px; /* Slightly reduced margin */
+    text-align: left;
+    
+    
+}
+
+.title-bar {
+    width: 100%;
+    background-color: #78cff2;
+    color: white;
+    text-align: right;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: normal;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 8px; /* Adjusted padding */
+    font-size: 14px; /* Reduced font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.update-button {
+    padding: 12px 24px; /* Reduced padding */
+    background-color: #007bff;
+    color: white;
+    font-size: 16px; /* Reduced font size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 130px; /* Adjusted button width */
+    text-align: center;
+}
+
+.update-button:hover {
+    background-color: #0069d9;
+}
+
+.main-content h2 {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 2%;
+}
+.sidebar {
+    width: 250px;
+    background-color: #1A2D70;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
